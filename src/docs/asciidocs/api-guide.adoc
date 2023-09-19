@@ -1,0 +1,25 @@
+=== Get count of characters in string
+
+==== Successful execution
+===== Curl example
+include::{snippets}/test-when-ok/curl-request.adoc[]
+===== Http request example
+include::{snippets}/test-when-ok/http-request.adoc[]
+===== Http response
+include::{snippets}/test-when-ok/http-response.adoc[]
+
+==== Execution when string is empty or too large
+===== Curl example
+include::{snippets}/test-when-string-is-empty/curl-request.adoc[]
+===== Http request example
+include::{snippets}/test-when-string-is-empty/http-request.adoc[]
+===== Http response
+include::{snippets}/test-when-string-is-empty/http-response.adoc[]
+
+==== Execution when string is null
+===== Curl example
+include::{snippets}/test-when-string-is-null/curl-request.adoc[]
+===== Http request example
+include::{snippets}/test-when-string-is-null/http-request.adoc[]
+===== Http response
+include::{snippets}/test-when-string-is-null/http-response.adoc[]
