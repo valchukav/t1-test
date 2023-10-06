@@ -23,4 +23,4 @@
 
 Образ расположен в публичном Docker Hub репозитории: https://hub.docker.com/r/avalc/t1-test-string
 
-С документацией REST api можно ознакомиться в формате html: https://github.com/valchukav/t1-test/tree/master/src/docs/generated-docs
+С документацией REST api можно ознакомиться в формате html (ее необходимо скачать): https://github.com/valchukav/t1-test/tree/master/src/docs/generated-docs
