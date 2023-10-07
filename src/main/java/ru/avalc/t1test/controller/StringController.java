@@ -1,5 +1,6 @@
 package ru.avalc.t1test.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,6 +24,7 @@ public class StringController {
 
     private final StringService service;
 
+    @Operation(summary = "Запрос для вычисления частоты встречи символов по заданной строке")
     @PostMapping("/")
     public ResponseEntity<Result> sumCharacters(@Validated @RequestBody StringToProcess stringToProcess) {
         return new ResponseEntity<>(service.processString(stringToProcess.getInput()), HttpStatus.OK);

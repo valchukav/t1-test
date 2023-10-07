@@ -1,5 +1,6 @@
 package ru.avalc.t1test.domain;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,10 +14,12 @@ import java.util.stream.Collectors;
  * @author Alexei Valchuk, 19.09.2023, email: a.valchukav@gmail.com
  */
 
+@Schema(description = "Результирующие данные")
 @Getter
 @Setter
 public class Result {
 
+    @Schema(description = "Результат обработки строки в формате \"символ: количество вхождений\", отсортированный по убыванию количества вхождений")
     private Map<Character, Integer> output;
 
     public Result() {
