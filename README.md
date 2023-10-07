@@ -24,3 +24,15 @@
 Образ расположен в публичном Docker Hub репозитории: https://hub.docker.com/r/avalc/t1-test-string
 
 С документацией REST api можно ознакомиться в формате html (ее необходимо скачать): https://github.com/valchukav/t1-test/tree/master/src/docs/generated-docs
+
+## UPDATE
+1. Добавлен wrapper для Maven.
+2. Изменена библиотека для документирования REST api: теперь документация формируется автоматически с помощью Swagger.
+
+Обновленную версию можно запустить с помощью команды:
+
+`docker run -p "8080:8080" avalc/t1-test-string:1-sw`
+
+Документация может быть загружена после запуска проекта по ссылке: http://localhost:8080/swagger-ui.html
+
+Прежняя версия docker image и документация также доступны.
