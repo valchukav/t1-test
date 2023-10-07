@@ -17,22 +17,14 @@
 > код решения необходимо разместить в публичном Github репозитории.
 
 ## Запуск проекта
-Проект можно запустить с помощью Docker, выполнив команду:
+Требования для запуска: наличие установленного Docker.
 
-`docker run -p "8080:8080" avalc/t1-test-string:1`
-
-Образ расположен в публичном Docker Hub репозитории: https://hub.docker.com/r/avalc/t1-test-string
-
-С документацией REST api можно ознакомиться в формате html (ее необходимо скачать): https://github.com/valchukav/t1-test/tree/master/src/docs/generated-docs
-
-## UPDATE
-1. Добавлен wrapper для Maven.
-2. Изменена библиотека для документирования REST api: теперь документация формируется автоматически с помощью Swagger.
-
-Обновленную версию можно запустить с помощью команды:
+Команда для запуска:
 
 `docker run -p "8080:8080" avalc/t1-test-string:1-sw`
 
-Документация может быть загружена после запуска проекта по ссылке: http://localhost:8080/swagger-ui.html
+Образ расположен в публичном Docker Hub репозитории: https://hub.docker.com/r/avalc/t1-test-string
 
-Прежняя версия docker image и документация также доступны.
+С документацией REST api можно ознакомиться после запуска проекта по ссылке: http://localhost:8080/swagger-ui.html
+
+Также документация доступна в формате html (ее необходимо скачать): https://github.com/valchukav/t1-test/tree/master/src/docs/generated-docs
